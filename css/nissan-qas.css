@@ -1,0 +1,765 @@
+@import url("font-awesome.min.css");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic");
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+	}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+		display: block;
+	}
+
+body {
+		line-height: 1;
+		overflow-x: hidden;
+	}
+/*нет стиля для списка*/
+ol, ul {
+		list-style: none;
+	}
+body {
+		-webkit-text-size-adjust: none;
+	}
+/* Box Model */
+
+	*, *:before, *:after {
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+/* Containers */
+
+.container {
+		margin-left: auto;
+		margin-right: auto;
+	}
+/*не понятно */
+	.container.\31 25\25 {
+		width: 100%;
+		max-width: 1750px;
+		min-width: 1400px;
+	}
+
+	.container.\37 5\25 {
+		width: 1050px;
+	}
+
+	.container.\35 0\25 {
+		width: 700px;
+	}
+
+	.container.\32 5\25 {
+		width: 350px;
+	}
+
+	.container {
+		width: 1400px;
+	}
+/*	*/
+	@media screen and (max-width: 1680px) {
+
+		.container.\31 25\25 {
+			width: 100%;
+			max-width: 1500px;
+			min-width: 1200px;
+		}
+
+		.container.\37 5\25 {
+			width: 900px;
+		}
+
+		.container.\35 0\25 {
+			width: 600px;
+		}
+
+		.container.\32 5\25 {
+			width: 300px;
+		}
+
+		.container {
+			width: 1200px;
+		}
+
+	}
+
+
+
+
+
+
+	/* Basic */
+
+	body {
+		background: #f7f7f7 ;
+	}
+
+		body.is-loading * {
+			-moz-transition: none !important;
+			-webkit-transition: none !important;
+			-ms-transition: none !important;
+			transition: none !important;
+			-moz-animation: none !important;
+			-webkit-animation: none !important;
+			-ms-animation: none !important;
+			animation: none !important;
+		}
+
+	body, input, select, textarea {
+		color: #474747;
+		font-family: 'Source Sans Pro', sans-serif;
+		font-size: 16pt;
+		font-weight: 300;
+		line-height: 1.65em;
+	}
+
+	a {
+		-moz-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, opacity 0.2s ease-in-out;
+		-webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, opacity 0.2s ease-in-out;
+		-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, opacity 0.2s ease-in-out;
+		transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, opacity 0.2s ease-in-out;
+		color: #37c0fb;
+		text-decoration: none;
+		border-bottom: dotted 1px;
+	}
+
+		a:hover {
+			color: #37c0fb;
+			border-bottom-color: transparent;
+		}
+
+	strong, b {
+		font-weight: 600;
+	}
+
+	em, i {
+		font-style: italic;
+	}
+
+	p, ul, ol, dl, table, blockquote {
+		margin: 0 0 0 0;
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		color: inherit;
+		font-weight: 600;
+		line-height: 1.75em;
+
+	}
+
+		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+			color: inherit;
+			text-decoration: none;
+		}
+
+		h1 em, h2 em, h3 em, h4 em, h5 em, h6 em {
+			font-style: normal;
+			font-weight: 300;
+		}
+
+	h2 {
+		font-size: 1.75em;
+		letter-spacing: -0.025em;
+	}
+
+	h3 {
+		font-size: 1.2em;
+		letter-spacing: -0.025em;
+	}
+
+	sub {
+		font-size: 0.8em;
+		position: relative;
+		top: 0.5em;
+	}
+
+	sup {
+		font-size: 0.8em;
+		position: relative;
+		top: -0.5em;
+	}
+
+	hr {
+		border-top: solid 1px #e0e0e0;
+		border: 0;
+		margin-bottom: 1.5em;
+	}
+
+	blockquote {
+		border-left: solid 0.5em #e0e0e0;
+		font-style: italic;
+		padding: 1em 0 1em 2em;
+	}
+
+	section.special, article.special {
+		text-align: center;
+	}
+
+	header p {
+		color: #999;
+		font-size: 1.25em;
+		position: relative;
+		margin-top: -1.25em;
+		margin-bottom: 2.25em;
+	}
+
+	header.major {
+		text-align: center;
+		margin: 0 0 2em 0;
+	}
+
+		header.major h2 {
+			font-size: 2.25em;
+		}
+
+		header.major p {
+			position: relative;
+			border-top: solid 1px #e0e0e0;
+			padding: 1em 0 0 0;
+			margin: 0;
+			top: -1em;
+			font-size: 1.5em;
+			letter-spacing: -0.025em;
+		}
+
+	footer {
+		margin: 0 0 3em 0;
+	}
+
+		footer > :last-child {
+			margin-bottom: 0;
+		}
+
+		footer.major {
+			padding-top: 3em;
+		}
+
+
+
+
+		/* Header */
+/* главный пост с меню по середине */
+	#header {
+		text-align: center;
+		padding: 3em 0 0 0;
+		background-color: #fff;
+	}
+/* отступ у заголовка */
+		#header h1 {
+			padding: 0 0 2.75em 0;
+			margin: 0;
+		}
+/* стиль для заголовка */
+			#header h1 a {
+				font-size: 1.5em;
+				letter-spacing: -0.025em;
+				border: 0;
+			}
+/* стиль для меню */
+	#nav {
+		cursor: default;
+		background-color: #333;
+		background-image: -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.3)), url("images/bg01.png");
+		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.3)), url("images/bg01.png");
+		background-image: -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.3)), url("images/bg01.png");
+		background-image: linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.3)), url("images/bg01.png");
+		padding: 0;
+	}
+/* стиль для подчеркивания меню */
+		#nav:after {
+			content: '';
+			display: block;
+			width: 100%;
+			height: 0.75em;
+			background-color: #37c0fb;
+			background-image: url("images/bg01.png");
+		}
+/* меню в строку */
+		#nav > ul {
+			margin: 0;
+		}
+
+			#nav > ul > li {
+				position: relative;
+				display: inline-block;
+				margin-left: 1em;
+			}
+
+				#nav > ul > li a {
+					color: #c0c0c0;
+					text-decoration: none;
+					border: 0;
+					display: block;
+					padding: 1.5em 0.5em 1.35em 0.5em;
+				}
+
+				#nav > ul > li:first-child {
+					margin-left: 0;
+				}
+
+				#nav > ul > li:hover a {
+					color: #fff;
+				}
+
+				#nav > ul > li.current {
+					font-weight: 600;
+				}
+/* стиль для синей стрелочки меню */
+					#nav > ul > li.current:before {
+						-moz-transform: rotateZ(45deg);
+						-webkit-transform: rotateZ(45deg);
+						-ms-transform: rotateZ(45deg);
+						transform: rotateZ(45deg);
+						width: 0.75em;
+						height: 0.75em;
+						content: '';
+						display: block;
+						position: absolute;
+						bottom: -0.5em;
+						left: 50%;
+						margin-left: -0.375em;
+						background-color: #37c0fb;
+						background-image: url("images/bg01.png");
+					}
+/* выделение белым текующую вкладку */
+				#nav > ul > li.current a {
+						color: #fff;
+				}
+
+				#nav > ul > li.active a {
+					color: #fff;
+				}
+
+				#nav > ul > li.active.current:before {
+					opacity: 0;
+				}
+
+				#nav > ul > li > ul {
+					display: none;
+				}
+
+/* Banner картинка по середине с машиной */
+
+	#banner {
+		background-color: #fff;
+		height: 23em;
+		position: relative;
+	}
+.nazvanie h1{
+	margin-left: 5%;
+	display:inline;
+	font-size: 2em;
+}
+.nazvanie a{
+	margin-left: 10%;
+	font-size: 1em;
+}
+
+
+/* Footer делает по середине*/
+
+			#footer {
+				text-align: left;
+			}
+
+				#footer .container {
+					margin-bottom: 4em;
+				}
+			h2 {
+				font-size: 1.25em;
+				letter-spacing: 0;
+				line-height: 1.35em;
+			}
+
+			h3 {
+				font-size: 1em;
+				letter-spacing: 0;
+				line-height: 1.35em;
+			}
+
+/*Контакты*/
+
+#faq {
+	text-align: center;
+	background-color: #fff;
+	border-top: 2px dashed #e4e3e3;
+	width: 100%;
+	float: left;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+#faq div {
+	width: 25%;
+	margin-left: 6%;
+	float: left;
+}
+
+
+
+#faq .title {
+	font-weight: lighter;
+	color: #171354;
+	margin-bottom: 20px;
+	font-size: 2.2em;
+}
+
+
+#faq p {
+	color: #4a4a4a;
+	font-size: 0.95em;
+	margin-bottom: 10px;
+}
+
+/* столбики  */
+
+.column {
+/*	text-align: center;*/
+    float: left;
+    width: 50%;
+	display: block;
+	
+	height: 100%;
+
+	padding-left: 2%;
+	background-color: #fff;
+}
+.column2 {
+	margin-left: 5%;
+    float: left;
+    width: 100%;
+    height: 500px; 
+}
+.row2:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.title2>p {
+	margin: 0;
+}
+#faq2 .title2 {
+	font-weight: lighter;
+	color: #171354;
+	margin-bottom: 20px;
+	font-size: 2.2em;
+}
+
+a.button7 {
+     font-weight: 700;
+    color: white;
+    text-decoration: none;
+    padding: 0.1em 1em calc(0.1em + 5px);
+    border-radius: 5px;
+    background: #ff2f44;
+
+
+    transition: 0.2s;
+} 
+a.button7:hover { background: #A60F1E; }
+
+/**/
+a.button8 {
+     font-weight: 700;
+    color: white;
+    text-decoration: none;
+    padding: 0.1em 1em calc(0.1em + 5px);
+    border-radius: 5px;
+    background: black;
+    margin-left: 5%;
+
+    transition: 0.2s;
+} 
+a.button8:hover { background: #2E2E2E; }
+
+/**/
+a.button9 {
+     font-weight: 700;
+    color: white;
+    text-decoration: none;
+    padding: 0.1em 1em calc(0.1em + 5px);
+    border-radius: 5px;
+    background: #2C497F;
+    margin-left: 5%;
+
+    transition: 0.2s;
+} 
+a.button9:hover { background: #37c0fb; }
+
+/**/
+a.button10 {
+     font-weight: 700;
+    color: white;
+    text-decoration: none;
+    padding: 0.1em 1em calc(0.1em + 5px);
+    border-radius: 5px;
+    background: #989898;
+    margin-left: 5%;
+
+    transition: 0.2s;
+} 
+a.button10:hover { background: #454545; }
+
+/**/
+a.button11 {
+     font-weight: 700;
+    color: white;
+    text-decoration: none;
+    padding: 0.1em 1em calc(0.1em + 5px);
+    border-radius: 5px;
+    background: #919F98	;
+
+    transition: 0.2s;
+} 
+a.button11:hover { background: #586F63; }
+
+/**/
+a.button12 {
+     font-weight: 700;
+    color: white;
+    text-decoration: none;
+    padding: 0.1em 1em calc(0.1em + 5px);
+    border-radius: 5px;
+    background: #141662;
+    margin-left: 5%;
+    transition: 0.2s;
+} 
+a.button12:hover { background: #7a7ca9; }
+
+/**/
+
+
+.box3 {
+	height: 400px;
+
+	text-align: center;
+	display: block;
+}
+a.button13 {
+     font-weight: 700;
+    color: white;
+    text-decoration: none;
+    padding: 0.1em 1em calc(0.1em + 5px);
+    border-radius: 5px;
+    background: #37c0fb;
+
+    transition: 0.2s;
+} 
+a.button13:hover { background: #323251; }
+
+a.button14 {
+
+    color: white;
+    text-decoration: none;
+    padding: 0.1em 1em calc(0.1em + 5px);
+    border-radius: 5px;
+    background: #37c0fb;
+
+    transition: 0.2s;
+} 
+a.button14:hover { background: #323251; }
+
+.eee {
+        text-align: center;
+        display: block;
+}
+.eee2 {
+        text-align: center;
+        display: block;
+}
+.e1 {
+	width: 300px;
+        height: 300px;
+        border: 5px solid #515151;
+        margin: 2%;float: left;
+}
+.e2 {
+		width: 200px;
+        height: 200px;
+        border: 5px solid #515151;
+        margin: 2%;
+        float: left;
+}
+.exmpl {
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .exmpl img {
+        height: 100%;
+        width: auto;
+
+      }
+/*колеса*/
+.colu {
+		width: 98%;
+        height: 450px;
+        border: 5px solid #fff;
+        margin: 2%;float: left;
+        margin-top: 25%;
+}
+.exml {
+		overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+.exml img {
+        height: 100%;
+        width: auto;
+        flex-shrink: 0;
+      }
+
+/*          */
+
+/*  свойства модального окна ^^^^^^  */
+
+/* свойства модального окна по умолчанию */
+    .modal {
+      position: fixed;
+      /* фиксированное положение */
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: rgba(0, 0, 0, 0.5);
+      /* цвет фона */
+      z-index: 1050;
+      opacity: 0;
+      /* по умолчанию модальное окно прозрачно */
+      -webkit-transition: opacity 400ms ease-in;
+      -moz-transition: opacity 400ms ease-in;
+      transition: opacity 400ms ease-in;
+      /* анимация перехода */
+      pointer-events: none;
+      /* элемент невидим для событий мыши */
+    }
+
+    /* при отображении модального окно */
+    .modal:target {
+      opacity: 1;
+      pointer-events: auto;
+      overflow-y: auto;
+    }
+
+    /* ширина модального окна и его отступы от экрана */
+    .modal-dialog {
+      position: relative;
+      width: auto;
+      margin: 10px;
+    }
+
+    @media (min-width: 576px) {
+      .modal-dialog {
+        max-width: 500px;
+        margin: 30px auto;
+      }
+    }
+
+    /* свойства для блока, содержащего контент модального окна */
+    .modal-content {
+      position: relative;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      background-color: #fff;
+      -webkit-background-clip: padding-box;
+      background-clip: padding-box;
+      border: 1px solid rgba(0, 0, 0, .2);
+      border-radius: .3rem;
+      outline: 0;
+    }
+
+    @media (min-width: 768px) {
+      .modal-content {
+        -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+      }
+    }
+
+    /* свойства для заголовка модального окна */
+    .modal-header {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      padding: 15px;
+      border-bottom: 1px solid #eceeef;
+    }
+
+    .modal-title {
+      margin-top: 0;
+      margin-bottom: 0;
+      line-height: 1.5;
+      font-size: 1.25rem;
+      font-weight: 500;
+    }
+
+    /* свойства для кнопки "Закрыть" */
+    .close {
+      float: right;
+      font-family: sans-serif;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 1;
+      color: #000;
+      text-shadow: 0 1px 0 #fff;
+      opacity: .5;
+      text-decoration: none;
+    }
+
+    /* свойства для кнопки "Закрыть" при нахождении её в фокусе или наведении */
+    .close:focus,
+    .close:hover {
+      color: #000;
+      text-decoration: none;
+      cursor: pointer;
+      opacity: .75;
+    }
+
+    /* свойства для блока, содержащего основное содержимое окна */
+    .modal-body {
+      position: relative;
+      -webkit-box-flex: 1;
+      -webkit-flex: 1 1 auto;
+      -ms-flex: 1 1 auto;
+      flex: 1 1 auto;
+      padding: 15px;
+      overflow: auto;
+    }
+/*  свойства модального окна ^^^^^^  */
+
+
+/*                                  */
+
+.cena>span {
+/*	margin-left: 10%;*/
+	text-align: center;
+}
+.cena1>span {
+/*	margin-left: 5%;*/
+	text-align: center;
+}
+.cena2>span {
+/*	margin-left: 2%;*/
+	text-align: center;
+}
